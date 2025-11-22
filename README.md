@@ -47,35 +47,6 @@ In Scope:
 
 ---
 
-2. System Architecture
-
-```mermaid
-flowchart TB
-
-    %% CLIENT LAYER
-    subgraph CLIENT_LAYER[CLIENT LAYER]
-        A[Celo MiniPay<br/>Mobile Wallet]
-        B[Farcaster Mini App<br/>(Discovery)]
-    end
-
-    A --> CORE
-    B --> CORE
-
-    %% SDK CORE
-    CORE[Payment SDK Core<br/>(TypeScript)]
-
-    %% SDK MODULES
-    CORE --> PYM[Payment Module]
-    CORE --> MER[Merchant Module]
-    CORE --> SELF[Self Protocol<br/>Contracts]
-
-    %% CHAIN
-    PYM --> CHAIN[Celo Blockchain<br/>(Mainnet)]
-    MER --> CHAIN
-    SELF --> CHAIN
-
-    %% Footer text (non-graph)
-```
 ---
 ## 3. Payment Flow Diagrams
 ---
