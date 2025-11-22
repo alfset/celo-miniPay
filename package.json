@@ -1,0 +1,45 @@
+{
+  "name": "celo-minipay",
+  "version": "1.0.0",
+  "description": "--- ## Version: 1.0 MVP ## Date: November 19, 2025 ## Milestone: Research, and plan implemenation",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "typecheck": "tsc --noEmit",
+    "example": "ts-node examples/basic-usage.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfset/celo-miniPay.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alfset/celo-miniPay/issues"
+  },
+  "homepage": "https://github.com/alfset/celo-miniPay#readme",
+  "dependencies": {
+    "ethers": "^6.9.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.10.1",
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
+    "dotenv": "^17.2.3",
+    "eslint": "^9.39.1",
+    "jest": "^30.2.0",
+    "rollup": "^4.53.3",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3"
+  }
+}
